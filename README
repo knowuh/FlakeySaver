@@ -1,0 +1,13 @@
+This is another old old old project. 
+
+because I was dusting off VidFreaker, I thought I should dust this one off
+too.
+
+It seems to work on 10.6 now.
+
+I basically checked in the entire xcode directory, only ignoring the build directories.
+
+There are better practices for sharing xcode
+projects on github I am sure, so please let me know.
+
+
