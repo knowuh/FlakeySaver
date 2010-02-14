@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {donePressed = id; }; 
+            CLASS = PrefWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "slider_max_movement" = NSSlider; 
+                "slider_max_size" = NSSlider; 
+                "slider_max_symetry" = NSSlider; 
+                "slider_max_verticies" = NSSlider; 
+                "slider_num_flakes" = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
