@@ -87,9 +87,9 @@
 		vy = double_between(-1 * vel,vel);
 		
 		vrot = double_between(-0.14f,0.14f);
-		vscale = double_between(0.94f, 0.999f);
+		vscale = double_between(1.01, 1.05);
 		
-		scale = 1.0f;
+		scale = 0.1f;
 		angle = 0.0f;
 		[self initshape];
 		
@@ -255,7 +255,10 @@
 	*/
 	- (void) scale:(float)amount {
 		scale *= amount;
-		if (scale < 0.1f) {
+		if (scale < 0.001f) {
+			[self initValues];
+		}
+		if (scale > 2) {
 			[self initValues];
 		}
 	}
