@@ -242,6 +242,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B2DD304C1128EF73005C5F01 /* 10.5 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = 10.5;
+		};
+		B2DD304D1128EF73005C5F01 /* 10.5 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = flakeysaver_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = flakeysaver;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = 10.5;
+		};
 		EF7AD72E08BB986600CE4634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -308,6 +336,7 @@
 			buildConfigurations = (
 				EF7AD72E08BB986600CE4634 /* Debug */,
 				EF7AD72F08BB986600CE4634 /* Release */,
+				B2DD304D1128EF73005C5F01 /* 10.5 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -317,6 +346,7 @@
 			buildConfigurations = (
 				EF7AD73208BB986600CE4634 /* Debug */,
 				EF7AD73308BB986600CE4634 /* Release */,
+				B2DD304C1128EF73005C5F01 /* 10.5 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
