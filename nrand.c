@@ -40,7 +40,6 @@ void seed() {
 double rand_double () {
 	double rand_double = (double) random()/(double)RAND_MAX;
 	rand_double = rand_double < 0.0 ? rand_double * -1.0 : rand_double;
-	printf("rand_double returning %f\n", rand_double);
 	return rand_double;
 }
 
@@ -48,7 +47,6 @@ double rand_double () {
 int rand_int (int range) {
 	double rnd = rand_double();
 	double rvalue = (rnd * range) + 1;
-	printf("rand_int returning %f\n",rvalue);
 	return rvalue;
 	
 }
@@ -72,6 +70,5 @@ double double_between(double min, double max) {
 	double rnd = rand_double();
 	rnd = rnd * (max - min);
 	rnd = rnd + min;
-	printf("double_between returning %f\n",rnd);
 	return rnd;
 }
